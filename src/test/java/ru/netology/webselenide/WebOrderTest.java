@@ -22,7 +22,7 @@ class WebOrderTest {
         form.$("[data-test-id=name] input").setValue("Петров Олег");
         form.$("[data-test-id=phone] input").setValue("+79091234567");
         form.$("[data-test-id=agreement]").click();
-        form.$("[data-test-id=button]").click();
+        form.$("button").click();
         $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 //        Thread.sleep(500);
     }
